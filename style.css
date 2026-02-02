@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #ffeaf4);
+  overflow-x: hidden;
+  text-align: center;
+  color: #5a2a3a;
+}
+
+.screen {
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #ff8fb1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.timeline {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  margin: 30px 0;
+}
+
+.timeline img {
+  height: 160px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tile {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.35);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.tile span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tile .timer {
+  font-size: 12px;
+}
+
+#memoryImage {
+  max-width: 90%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.polaroid {
+  margin-top: 40px;
+  width: 200px;
+  height: 250px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
