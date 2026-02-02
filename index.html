@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story 💗</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Password Screen -->
+<div id="passwordScreen" class="screen">
+  <h2>Enter Password</h2>
+  <input type="password" id="passwordInput" placeholder="Password"/>
+  <button onclick="checkPassword()">Enter</button>
+</div>
+
+<!-- Feb 3 Screen -->
+<div id="feb3Screen" class="screen hidden">
+  <audio id="feb3Music" src="chaandni.mp3"></audio>
+  <h1>3 Months. Still here. Still us.</h1>
+
+  <p class="feb3Text">
+    I know, my love, you were afraid of the “three-month curse.”<br>
+    But look at us… we made it here with so much happiness.<br>
+    Don’t worry, my darling. We’re in this for the long run.<br>
+    And when I say forever… I truly mean forever.
+  </p>
+
+  <div class="timeline">
+    <img src="images/first_meet.jpg">
+    <img src="images/cheek_kiss.jpg">
+    <img src="images/park_selfie.jpg">
+    <img src="images/mirror_moment.jpg">
+    <img src="images/close_smile.jpg">
+    <img src="images/bench_together.jpg">
+    <img src="images/metro_hold.jpg">
+    <img src="images/lace_tying.jpg">
+  </div>
+
+  <p class="bottomLine">Made on 3rd Feb, because this date matters.</p>
+
+  <button onclick="goToTiles()">Let’s begin our Valentine story</button>
+</div>
+
+<!-- Valentine Tiles -->
+<div id="tilesScreen" class="screen hidden">
+  <h2 id="dayCounter"></h2>
+  <div class="tiles">
+    <div class="tile" data-date="2026-02-07" onclick="openMemory(1)">
+      <span>Rose Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile" data-date="2026-02-08" onclick="openMemory(2)">
+      <span>Propose Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile" data-date="2026-02-09" onclick="openMemory(3)">
+      <span>Chocolate Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile" data-date="2026-02-10" onclick="openMemory(4)">
+      <span>Teddy Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile" data-date="2026-02-11" onclick="openMemory(5)">
+      <span>Promise Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile" data-date="2026-02-12" onclick="openMemory(6)">
+      <span>Hug Day</span>
+      <p class="timer"></p>
+    </div>
+    <div class="tile final" data-date="2026-02-13" onclick="openFinal()">
+      <span>Final Surprise</span>
+      <p class="timer"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Memory Screen -->
+<div id="memoryScreen" class="screen hidden">
+  <img id="memoryImage"/>
+  <p id="memoryText"></p>
+  <button onclick="backToTiles()">Back</button>
+</div>
+
+<!-- Final Screen -->
+<div id="finalScreen" class="screen hidden">
+  <h1>Me Too 🎀💖</h1>
+  <h3>Never giving up on each other.</h3>
+  <p id="finalLetter">
+    I love you, my darling. This is just a small way of showing my gratitude to you...
+  </p>
+
+  <div class="polaroid" onclick="uploadPolaroid()">
+    <img id="polaroidImage"/>
+    <span>For a memory we’ll choose together.</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
